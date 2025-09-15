@@ -3,44 +3,60 @@ body {
 .navigation-bar-container {
   display: flex;
   justify-content: center;
+  border: 2px solid red;
 }
 
-.navigation-bar-icons {
+.navigation-bar-and-icons {
   display: flex;
-  gap: 400px;
-}
-
-.logo-image {
-  width: 155px;
-  height: 50px;
-}
-
-.nav-menu {
-  list-style-type: none;
-  color: rgb(116, 113, 51);
-  font-family: sans-serif;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: rgb(116, 113, 51);
+  justify-content: space-between;
+  border: 2px solid green;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .logo-with-navigation {
   display: flex;
   gap: 15px;
-}
-
-.navigation-bar {
+  border: 2px solid black;
+  max-width: 100%;
 }
 
 .nav-menu {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: rgb(116, 113, 51);
+  font-family: sans-serif;
+  justify-content: center;
+  gap: 1rem;
+  border: 2px solid blue;
+  max-width: 100%;
+  overflow-x: hidden; /* prevent horizontal scroll if something misbehaves */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(116, 113, 51);
+  border: 2px solid brown;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.icons {
+  border: 2px solid pink;
+}
+.logo-image {
+  width: 155px;
+  height: 50px;
+}
+
+.navigation-bar {
+  border: 2px solid red;
+  width: 100%;
 }
 
 .main-container {
   text-align: center;
+  border: 5px solid blue;
 }
 
 .hero-section {
@@ -51,6 +67,8 @@ body {
   background-position: 0% 50%;
   position: relative;
   margin-top: 10px;
+  border: 5px solid red;
+  max-width: 100%;
 }
 
 .hero-writting {
@@ -83,13 +101,32 @@ body {
 }
 
 .product-writting-and-image {
+  width: 900px;
   display: flex;
   gap: 40px;
-  width: 900px;
+  border: 5px solid red;
 }
 
-.product-writting-and-image > * {
-  flex-basis: 50%;
+.product-writting {
+  flex-basis: 38%;
+}
+
+.image-container {
+  flex-basis: 62%;
+}
+
+@media (max-width: 800px) {
+  .product-writting-and-image {
+    flex-direction: column;
+  }
+}
+
+.product-writting {
+  border: 2px solid yellow;
+}
+
+.image-container {
+  border: 2px solid blue;
 }
 
 .product-image {
