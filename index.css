@@ -3,13 +3,11 @@ body {
 .navigation-bar-container {
   display: flex;
   justify-content: center;
-  border: 2px solid red;
 }
 
 .navigation-bar-and-icons {
   display: flex;
   justify-content: space-between;
-  border: 2px solid green;
   max-width: 100%;
   min-width: 100%;
 }
@@ -17,7 +15,6 @@ body {
 .logo-with-navigation {
   display: flex;
   gap: 15px;
-  border: 2px solid black;
   max-width: 100%;
 }
 
@@ -29,7 +26,6 @@ body {
   font-family: sans-serif;
   justify-content: center;
   gap: 1rem;
-  border: 2px solid blue;
   max-width: 100%;
   overflow-x: hidden; /* prevent horizontal scroll if something misbehaves */
 }
@@ -37,12 +33,10 @@ body {
 .nav-link {
   text-decoration: none;
   color: rgb(116, 113, 51);
-  border: 2px solid brown;
   font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .icons {
-  border: 2px solid pink;
 }
 .logo-image {
   width: 155px;
@@ -50,13 +44,11 @@ body {
 }
 
 .navigation-bar {
-  border: 2px solid red;
   width: 100%;
 }
 
 .main-container {
   text-align: center;
-  border: 5px solid blue;
 }
 
 .hero-section {
@@ -67,7 +59,6 @@ body {
   background-position: 0% 50%;
   position: relative;
   margin-top: 10px;
-  border: 5px solid red;
   max-width: 100%;
 }
 
@@ -104,7 +95,6 @@ body {
   width: 900px;
   display: flex;
   gap: 40px;
-  border: 5px solid red;
 }
 
 .product-writting {
@@ -122,11 +112,9 @@ body {
 }
 
 .product-writting {
-  border: 2px solid yellow;
 }
 
 .image-container {
-  border: 2px solid blue;
 }
 
 .product-image {
@@ -197,6 +185,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .main-row {
+    flex-direction: column;
+  }
 }
 
 .text {
