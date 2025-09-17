@@ -38,6 +38,7 @@ body {
 
 .icons {
 }
+
 .logo-image {
   width: 155px;
   height: 50px;
@@ -58,25 +59,29 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 50%;
-  position: relative;
   margin-top: 10px;
   max-width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .hero-writting {
+  border: 4px solid green;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  right: 40px;
-  bottom: 100px;
+  align-items: end;
 }
 
-.hero-headung {
+.hero-heading {
   font-family: sans-serif;
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 600;
+}
+
+.text-item {
+  border: 2px solid blue;
 }
 
 .hero-prize {
@@ -107,6 +112,10 @@ body {
 }
 
 @media (max-width: 800px) {
+  .hero-prize {
+    font-size: 30px;
+  }
+
   .product-writting-and-image {
     flex-direction: column;
   }
